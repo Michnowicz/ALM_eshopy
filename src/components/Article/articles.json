@@ -1,0 +1,26 @@
+[
+    {
+        "nom":"Amnesia Haze",
+        "prix":2,
+        "stock":5,
+        "src":"./src/assets/amnesia-haze.jpg"
+    },
+    {
+        "nom":"Diesel Tonic",
+        "prix":1.8,
+        "stock":3,
+        "src":"./src/assets/diesel-tonic.jpg"
+    },
+    {
+        "nom":"Purple Haze",
+        "prix":2.3,
+        "stock":4,
+        "src":"./src/assets/purple-haze.jpg"
+    },
+    {
+        "nom":"Skittlz",
+        "prix":2.2,
+        "stock":2,
+        "src":"./src/assets/skittlz.jpg"
+    }
+]

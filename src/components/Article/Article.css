@@ -1,0 +1,46 @@
+.article {
+    width: 200px;
+    height: fit-content;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgba(188, 188, 188, 0.7);
+    overflow: hidden;
+    box-shadow: 0px 3px 3px rgb(188, 188, 188, 0.5);
+}
+
+.articleTitle {
+    padding: 6px 10px 6px;
+    background-color: #43b981;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.article img {
+    justify-content: center;
+    height: 200px;
+}
+
+.articleText {
+    padding: 20px;
+}
+
+.articleText h2 {
+    margin-bottom: 6px;
+}
+
+.articleText p {
+    margin-bottom: 4px;
+}
+
+.articleText button {
+    background-color: #43b981;
+    border: none;
+    padding: 6px 12px 6px 12px;
+    border-radius: 6px;
+    color: white;
+    font-weight: 500;
+    margin-top: 6px;
+    cursor: pointer;
+}
