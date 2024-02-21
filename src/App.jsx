@@ -8,6 +8,23 @@ import { useState } from 'react'
 
 function App() {
 
+  function handleHover(e) {
+    if (e.target.className === "link") {
+      e.target.classList.toggle("hover")
+    } else if (e.target.className === "linkText") {
+      e.target.parentElement.classList.toggle("hover")
+    }
+  }
+
+  function handleHoverOut(e) {
+    if (e.target.className === "link hover") {
+      e.target.classList.toggle("hover")
+    } else if (e.target.className === "linkText hover") {
+      e.target.parentElement.classList.toggle("hover")
+    }
+  }
+
+
   let [argent, setArgent] = useState(20)
   let [data, setData] = useState(Data)
   let [basket, setBasket] = useState([])
@@ -88,7 +105,7 @@ function App() {
 
   return (
     <div className='App'>
-      <Navbar/>
+      <Navbar handleOver={handleHover} handleOut={handleHoverOut}/>
       <div className='AppCore'>
         <div className='container'>
           <h2 className="portefeuille">Portefeuille: {argent}€</h2>

@@ -1,7 +1,87 @@
 
 .Navbar {
     width: 100vw;
-    height: 40px;
+    height: 60px;
     background-color: #43b981;
     position: fixed;
+    display: flex;
+}
+
+.leftDiv {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+    background-color: black;
+    border-radius: 50%;
+}
+.logo img {
+    height: 40px;
+}
+
+
+
+.rightDiv {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px 0 20px;
+}
+.link2 {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px 0 20px;
+}
+.hover {
+    background-color: rgb(40, 40, 40);
+}
+
+
+.linkText {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.arrow {
+    margin-left: 6px;
+    width: 5px;
+    height: 5px;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    position: relative;
+    rotate: -45deg;
+}
+
+.link2 input {
+    padding: 4px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.link2 button {
+    padding: 4px;
+    margin-left: 6px;
+    background-color: #43b981;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.link2 button i {
+    color: white;
 }
