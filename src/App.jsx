@@ -16,7 +16,8 @@ function App() {
   let handleAddCart = (e) => {
     let index = e.target.className
 
-    //soustrait le prix de l'objet au portefeuille
+    if (argent >= data[index].prix) {
+      //soustrait le prix de l'objet au portefeuille
     setArgent(argent - data[index].prix)
 
     //modifie le stock
@@ -46,6 +47,8 @@ function App() {
       basket2.qte = 1
       setBasket([...basket, basket2])
     }
+    }
+    
   }
 
 
