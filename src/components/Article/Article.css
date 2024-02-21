@@ -1,11 +1,16 @@
 .article {
     width: 200px;
     height: fit-content;
-    background-color: white;
     border-radius: 5px;
     border: 1px solid rgba(188, 188, 188, 0.7);
     overflow: hidden;
     box-shadow: 0px 3px 3px rgb(188, 188, 188, 0.5);
+}
+.stockIn {
+    background-color: white;
+}
+.stockOut {
+    background-color: rgb(248, 137, 82);
 }
 
 .articleTitle {
@@ -17,7 +22,7 @@
     text-align: center;
 }
 
-.article img {
+img {
     justify-content: center;
     height: 200px;
 }
@@ -34,7 +39,7 @@
     margin-bottom: 4px;
 }
 
-.articleText button {
+.articleText #shown {
     background-color: #43b981;
     border: none;
     padding: 6px 12px 6px 12px;
@@ -43,4 +48,11 @@
     font-weight: 500;
     margin-top: 6px;
     cursor: pointer;
+}
+
+
+
+
+#hidden {
+    display: none;
 }
