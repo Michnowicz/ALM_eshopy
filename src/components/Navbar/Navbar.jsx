@@ -24,9 +24,9 @@ export default function Navbar(props) {
                 <div className="link" onMouseEnter={props.handleOver} onMouseLeave={props.handleOut}>
                     <p className="linkText">CONTACT</p>
                 </div>
-                <div className="link2" onMouseEnter={props.handleOver} onMouseLeave={props.handleOut}>
-                    <input type="text" placeholder="recherche"/>
-                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                <div className="link2">
+                    <input type="text" placeholder="recherche" onFocus={props.focus} onBlur={props.focus}/>
+                    <button><i className="fa-solid fa-magnifying-glass"></i></button>
                 </div>
             </div>
         </div>

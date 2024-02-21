@@ -19,9 +19,12 @@ function App() {
   function handleHoverOut(e) {
     if (e.target.className === "link hover") {
       e.target.classList.toggle("hover")
-    } else if (e.target.className === "linkText hover") {
-      e.target.parentElement.classList.toggle("hover")
     }
+  }
+
+  function handleFocus(e) {
+    e.target.classList.toggle("focus")
+    console.log(e.target);
   }
 
 
@@ -105,7 +108,7 @@ function App() {
 
   return (
     <div className='App'>
-      <Navbar handleOver={handleHover} handleOut={handleHoverOut}/>
+      <Navbar handleOver={handleHover} handleOut={handleHoverOut} focus={handleFocus}/>
       <div className='AppCore'>
         <div className='container'>
           <h2 className="portefeuille">Portefeuille: {argent}€</h2>
